@@ -1,19 +1,169 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>OOT Item Tracker</title>
+  <link rel="stylesheet" href="./global-styles.css" />
+</head>
+
+<body>
+  <div class="item-grid clothes">
+    <img class="item" src="images/greentunic.png" />
+    <img class="item" src="images/redtunic.png" />
+    <img class="item" src="images/bluetunic.png" />
+    <img class="item" src="images/kokiriboots.png" />
+    <img class="item" src="images/ironboots.png" />
+    <img class="item" src="images/hoverboots.png" />
+  </div>
+  <div class="item-grid">
+    <img class="item" src="images/shield1.png" />
+    <img class="item" src="images/shield2.png" />
+    <img class="item" src="images/shield3.png" />
+    <img class="item" src="images/sword1.png" />
+    <img class="item" src="images/sword2.png" />
+    <img class="item" src="images/sword3.png" />
+
+  </div>
+  <div class="item-grid">
+    <img class="item" src="images/fairyocarina.png" />
+    <img class="item" src="images/ocarina.png" />
+    <img class="item" src="images/lens.png" />
+  </div>
+  <div class="item-grid">
+    <img class="item" src="images/stick.png" />
+    <img class="item" src="images/nut.png" />
+    <img class="item" src="images/slingshot.png" />
+    <img class="item" src="images/boomerang.png" />
+    <img class="item" src="images/bomb.png" />
+    <img class="item" src="images/bombchu.png" />
+  </div>
+  <div class="item-grid">
+    <img class="item" src="images/hookshot.png" />
+    <img class="item" src="images/longshot.png" />
+    <img class="item" src="images/bow.png" />
+    <img class="item" src="images/hammer.png" />
+  </div>
+  <div class="item-grid">
+    <img class="item" src="images/firearrow.png" />
+    <img class="item" src="images/lightarrow.png" />
+    <img class="item" src="images/icearrow.png" />
+    <img class="item" src="images/din.png" />
+    <img class="item" src="images/farore.png" />
+    <img class="item" src="images/nayru.png" />
+  </div>
+
+
+  <div class="item-grid medallions">
+    <img class="item" src="images/lightmedallion.png" />
+    <img class="item" src="images/forestmedallion.png" />
+    <img class="item" src="images/firemedallion.png" />
+    <img class="item" src="images/watermedallion.png" />
+    <img class="item" src="images/shadowmedallion.png" />
+    <img class="item" src="images/spiritmedallion.png" />
+  </div>
+  <div class="item-grid">
+    <img class="item" src="images/emerald.png" />
+    <img class="item" src="images/ruby.png" />
+    <img class="item" src="images/sapphire.png" />
+  </div>
+  <div class="item-grid">
+    <img class="item" src="images/scale1.png" />
+    <img class="item" src="images/scale2.png" />
+    <img class="item" src="images/lift1.png" />
+    <img class="item" src="images/lift2.png" />
+    <img class="item" src="images/lift3.png" />
+    <img class="item" src="images/magic1.png" />
+    <img class="item" src="images/magic2.png" />
+  </div>
+  <div class="item-grid">
+    <img class="item" src="images/wallet.png" />
+    <img class="item" src="images/wallet1.png" />
+    <img class="item" src="images/wallet2.png" />
+    <img class="item" src="images/wallet3.png" />
+  </div>
+
+  <div class="item-grid songs">
+    <img class="item" src="images/zelda_colored.png" />
+    <img class="item" src="images/epona_colored.png" />
+    <img class="item" src="images/saria_colored.png" />
+    <img class="item" src="images/sun_colored.png" />
+    <img class="item" src="images/time_colored.png" />
+    <img class="item" src="images/storms_colored.png" />
+    <img class="item" src="images/scarecrow.png" />
+  </div>
+  <div class="item-grid songs">
+    <img class="item" src="images/minuet.png" />
+    <img class="item" src="images/bolero.png" />
+    <img class="item" src="images/serenade.png" />
+    <img class="item" src="images/requiem.png" />
+    <img class="item" src="images/nocturne.png" />
+    <img class="item" src="images/prelude.png" />
+  </div>
+
+  <div class="item-grid random">
+    <img class="item" src="images/gerudocard.png" />
+    <img class="item" src="images/letter.png" />
+    <img class="item" src="images/bean.png" />
+    <img class="item" src="images/agony.png" />
+  </div>
+
+  <div class="item-grid bottles">
+    <img class="item" src="images/bottle.png" />
+    <img class="item" src="images/bottle_letter.png" />
+    <img class="item" src="images/bottle_bugs.png" />
+    <img class="item" src="images/bottle_fish.png" />
+    <img class="item" src="images/bottle_fairy.png" />
+    <img class="item" src="images/bottle_fire.png" />
+  </div>
+  <div class="item-grid bottles">
+    <img class="item" src="images/bottle_red.png" />
+    <img class="item" src="images/bottle_green.png" />
+    <img class="item" src="images/bottle_blue.png" />
+    <img class="item" src="images/bottle_milk.png" />
+    <img class="item" src="images/bottle_halfmilk.png" />
+    <img class="item" src="images/bottle_poe.png" />
+    <img class="item" src="images/bottle_bigpoe.png" />
+  </div>
+
+  <div class="item-grid masks">
+    <img class="item" src="images/keaton.png" />
+    <img class="item" src="images/skull.png" />
+    <img class="item" src="images/spooky.png" />
+    <img class="item" src="images/bunny.png" />
+    <img class="item" src="images/truth.png" />
+  </div>
+
+  <div class="item-grid">
+    <img class="item" src="images/egg.png" />
+    <img class="item" src="images/cucco.png" />
+    <img class="item" src="images/cojiro.png" />
+    <img class="item" src="images/mushroom.png" />
+    <img class="item" src="images/medicine.png" />
+    <img class="item" src="images/saw.png" />
+    <img class="item" src="images/broken_sword.png" />
+    <img class="item" src="images/perscription.png" />
+    <img class="item" src="images/frog.png" />
+    <img class="item" src="images/eyedrops.png" />
+    <img class="item" src="images/claim.png" />
+  </div>
+
+  <!-- <img class="item" src="images/bosskey.png" /> -->
+  <!-- <img class="item" src="images/HC.png" />
+    <img class="item" src="images/HP.png" /> -->
+  <!-- <img class="item" src="images/overlay_10.png" />
+    <img class="item" src="images/overlay_20.png" />
+    <img class="item" src="images/overlay_30.png" />
+    <img class="item" src="images/overlay_30_green.png" />
+    <img class="item" src="images/overlay_40.png" /> -->
+  <!-- <img class="item" src="images/smallkey.png" /> -->
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+  <script src="item.js"></script>
+</body>
+
 </html>

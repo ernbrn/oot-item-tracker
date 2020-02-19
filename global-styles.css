@@ -1,0 +1,19 @@
+body {
+  background: black;
+}
+.item {
+  filter: contrast(0.8) grayscale(0.5);
+  opacity: 0.4;
+  height: 45px;
+  width: 45px;
+  margin-right: 4px;
+}
+
+.item-grid {
+  margin-top: 12px;
+}
+
+.found {
+  filter: none !important;
+  opacity: 1 !important;
+}
